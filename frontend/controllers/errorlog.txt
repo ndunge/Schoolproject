@@ -1,0 +1,30 @@
+* Hostname in DNS cache was stale, zapped
+*   Trying 41.223.145.169...
+* Connected to sandbox.interswitchng.com (41.223.145.169) port 443 (#0)
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* Server certificate:
+*  subject: C=NG; ST=LAGOS; L=LAGOS; O=INTERSWITCH LIMITED; OU=INFRATRUST; CN=interswitchng.com
+*  start date: Jul 27 00:00:00 2015 GMT
+*  expire date: Jul 26 23:59:59 2018 GMT
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+> GET /webpay/api/v1/gettransaction.json?amount=100000&productid=6205&transactionreference=698167EAC73C109168APPL10101001497409863200 HTTP/1.1
+Host: sandbox.interswitchng.com
+Accept: */*
+Hash: b9d5848d30bc0f5bb97c7c018de5d22d3f2cc7d88c0973287e9781baf0603e8ec5e2bcf97840a96215f386dd881bcb334db814d8b9661581c407e8041866b6c4
+
+< HTTP/1.1 200 OK
+< Cache-Control: no-cache
+< Pragma: no-cache
+< Content-Type: application/json; charset=utf-8
+< Expires: -1
+< X-AspNet-Version: 4.0.30319
+< X-Powered-By: ASP.NET
+< Date: Mon, 16 Jan 2017 15:07:11 GMT
+< Content-Length: 363
+< Set-Cookie: Webpay_SessionId=3111eb9d3f90da9cc3edd35898963576; path=/; HttpOnly; Secure;
+< strict-transport-security: max-age=631138519
+< Set-Cookie: TS019b6bbf=016b9b4bca2ebb626fb5c23dc791de0b93142002e3218132074608315d492b762194e66c656d2ecdca5778b09f2024592734d46349; Path=/
+< 
+* Connection #0 to host sandbox.interswitchng.com left intact
